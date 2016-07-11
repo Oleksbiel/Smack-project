@@ -1,0 +1,35 @@
+.features{
+	&__wrapper-icon{
+		width: 106px;
+		height: 106px;
+		background: $brand-color;
+		display: inline-block;
+		border-radius: 50%;
+	}
+	&__icon{
+		color: #fff;
+		font-size: 38px;
+		z-index: 99;
+		line-height: 106px;
+	}
+	&__text-block{
+
+	}
+	&__title{
+		color: $bg-4;
+		font-weight: 700;
+	}
+	&__description{
+		font-weight: 300;
+		line-height: 25px;
+	}
+}
+.has-active{
+	.features__wrapper-icon{
+		background: transparent ;
+		border: 1px solid $bg-4;
+	}
+	.features__icon{
+		color: $brand-color ;
+	}
+}
