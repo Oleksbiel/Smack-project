@@ -11,14 +11,15 @@ $brand-color: #ffe600;;
 $body-bg:               #fbfbfb !default;
 $bg-1:                  #112a2f;
 $bg-2:                  #11343a;
-$bg-3:                  #12191d;
+$bg-3:                  #122a2f;
 $bg-4:                  #131316;
 $bg-5:                  #fbfbfb;
 $text-color:            #707070;
 $link-color:            $brand-color !default;
 $link-hover-color:      darken($link-color, 10%) !default;
 $link-hover-decoration: underline !default;
-
+$section-padding-sm:    15px 0 25px !default;
+$section-padding-md:    50px 0 !default;
 
 //## Typography
 $font-family-base:        Oswald,Arial, Helvetica, Tahoma, sans-serif !default;
@@ -26,7 +27,7 @@ $font-size-base:          16px;
 $line-height-base:        1.56;
 
 $headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-weight:    700 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
