@@ -1,4 +1,9 @@
 .features{
+	&--inverse{
+		&__title , &__description{
+			color: #fff;
+		}
+	}
 	&__wrapper-icon{
 		width: 106px;
 		height: 106px;
@@ -11,6 +16,11 @@
 		font-size: 38px;
 		z-index: 99;
 		line-height: 106px;
+		&--without-circle{
+			color: $brand-color;
+			line-height: normal;
+			font-size: 45px;
+		}
 	}
 	&__text-block{
 
@@ -18,6 +28,7 @@
 	&__title{
 		color: $bg-4;
 		font-weight: 700;
+		text-transform: uppercase;
 	}
 	&__description{
 		font-weight: 300;
@@ -32,4 +43,9 @@
 	.features__icon{
 		color: $brand-color ;
 	}
+}
+.features--inverse{
+		.features__title , .features__description{
+			color: #fff;
+		}
 }

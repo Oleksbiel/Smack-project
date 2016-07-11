@@ -1222,6 +1222,9 @@ textarea.form__control {
 input[type="search"] {
   -webkit-appearance: none; }
 
+.features--inverse__title, .features--inverse__description {
+  color: #fff; }
+
 .features__wrapper-icon {
   width: 106px;
   height: 106px;
@@ -1234,10 +1237,15 @@ input[type="search"] {
   font-size: 38px;
   z-index: 99;
   line-height: 106px; }
+  .features__icon--without-circle {
+    color: #ffe600;
+    line-height: normal;
+    font-size: 45px; }
 
 .features__title {
   color: #131316;
-  font-weight: 700; }
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .features__description {
   font-weight: 300;
@@ -1249,3 +1257,6 @@ input[type="search"] {
 
 .has-active .features__icon {
   color: #ffe600; }
+
+.features--inverse .features__title, .features--inverse .features__description {
+  color: #fff; }
