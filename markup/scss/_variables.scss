@@ -8,12 +8,13 @@ $brand-color: #ffe600;;
 
 
 //## Settings for some of the most global styles.
-$body-bg:               #fbfbfb !default;
+$body-bg:               #fff !default;
+$bg-light:              #fbfbfb;
+$bg-inverse:            #131a1d; //forms, skills, counter progress, hOW WE DO IT
 $bg-1:                  #112a2f;
-$bg-2:                  #11343a;
 $bg-3:                  #122a2f;
-$bg-4:                  #131316;
-$bg-5:                  #fbfbfb;
+$bg-4:                  #131316; //footer, tabs
+$bg-footer:             $bg-4;
 $text-color:            #707070;
 $link-color:            $brand-color !default;
 $link-hover-color:      darken($link-color, 10%) !default;

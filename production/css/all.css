@@ -62,7 +62,7 @@ body {
   font-family: Oswald, Arial, Helvetica, Tahoma, sans-serif;
   font-size: 16px;
   color: #707070;
-  background: #fbfbfb; }
+  background: #fff; }
 
 a {
   color: #ffe600; }
@@ -929,21 +929,21 @@ h6, .h6 {
   .col-xl-offset-12 {
     margin-left: 100%; } }
 
-.section--darkest {
-  background-color: #122a2f; }
-
-.section--dark {
-  background-color: #11343a;
-  color: #fff; }
-
-.section--light {
-  background-color: #fbfbfb; }
-
-.section--pd-sm {
-  padding: 15px 0 25px; }
-
-.section--pd-md {
-  padding: 50px 0; }
+.section {
+  background-color: #fff; }
+  .section--inverse {
+    background-color: #131a1d;
+    color: #fff; }
+  .section--light {
+    background-color: #fbfbfb; }
+  .section--header {
+    background-color: #122a2f; }
+  .section--footer {
+    background-color: #131316; }
+  .section--pd-sm {
+    padding: 15px 0 25px; }
+  .section--pd-md {
+    padding: 50px 0; }
 
 .section__vp {
   height: 900px;
@@ -957,11 +957,46 @@ h6, .h6 {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%); }
+          transform: translate(0, -50%); }
   .jumbotron h1 {
     width: 65%;
     margin-left: auto;
     margin-right: auto; }
+
+.heading {
+  margin-bottom: 60px;
+  color: #515151; }
+  .heading__small__title {
+    color: #515151;
+    font-weight: 400; }
+  .heading__title {
+    color: #000; }
+    .heading__title--color-brand {
+      color: #ffe600; }
+  .heading__description {
+    line-height: 1.56;
+    font-weight: 300;
+    color: #707070; }
+  .heading--inverse {
+    color: #fff; }
+    .heading--inverse .heading__title,
+    .heading--inverse .heading__description {
+      color: #fff; }
+
+.border-bottom {
+  text-align: center;
+  margin: 20px 0 40px;
+  position: relative; }
+  .border-bottom:after {
+    content: '';
+    position: absolute;
+    width: 171px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -100;
+    margin: 0 auto;
+    background: #ffe600; }
 
 @font-face {
   font-family: 'icomoon';
