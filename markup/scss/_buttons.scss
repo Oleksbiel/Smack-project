@@ -55,9 +55,11 @@
 	text-decoration: none;
 	@include button-size($btn-padding-vertical, $btn-padding-horizontal, $btn-font-size, $line-height-base, $btn-border-radius);
 	user-select: none;
+	transition: all 0.5s;
 	&:hover {
 		color: inherit;
 		text-decoration: none;
+		transition: all 0.5s;
 	}
 	&.disabled,
 	&[disabled],

@@ -10,15 +10,20 @@
 		width: 60px;
 		height: 60px;
 		background: $brand-color;
+		text-decoration: none;
+		transition: all 0.2s;
+		&:hover .anchor__icon{
+			color: #000;
+			text-decoration: none;
+			transition: all 0.2s;
+		}
 	}
 	&__icon{
 		font-size: 18px;
 		color: #fff;
 		line-height: 60px;
 		text-decoration: none;
-		&:hover{
-			color: #000;
-			text-decoration: none;
-		}
+		
+		
 	}
 }

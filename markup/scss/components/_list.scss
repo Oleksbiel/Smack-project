@@ -13,8 +13,10 @@
 		font-size: 17px;
 		color: #fff;
 		display: inline-block;	
+		transition: all 0.4s;
 		&:hover{
 			color: $brand-color;
+			transition: all 0.4s;
 		}
 	}
 }
