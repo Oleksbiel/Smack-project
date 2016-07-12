@@ -64,6 +64,9 @@
 		cursor: disabled;
 		opacity: .65;
 	}
+	&--fs-sm{
+		font-size: $btn-font-size-sm;
+	}
 	// [converter] extracted a& to a.btn
 }
 
@@ -78,6 +81,10 @@ a.btn {
 // --------------------------------------------------
 .btn--brand {
 	@include button-variant($btn-brand-color, $btn-brand-bg, $btn-brand-border, $btn-brand-color-hover, $btn-brand-bg-hover, $btn-brand-border-hover);
+}
+
+.btn--brand-inverse{
+	@include button-variant($btn-color-inverse, $btn-brand-bg, $btn-brand-border, $btn-brand-color-hover, $btn-brand-bg-hover, $btn-brand-border-hover);
 }
 // Link buttons
 // -------------------------

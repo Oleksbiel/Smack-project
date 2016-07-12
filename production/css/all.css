@@ -1091,6 +1091,8 @@ h6, .h6 {
   fieldset[disabled] .btn {
     cursor: disabled;
     opacity: .65; }
+  .btn--fs-sm {
+    font-size: 15px; }
 
 a.btn.disabled,
 fieldset[disabled] a.btn {
@@ -1115,6 +1117,28 @@ fieldset[disabled] a.btn {
   fieldset[disabled] .btn--brand.focus,
   fieldset[disabled] .btn--brand:active,
   fieldset[disabled] .btn--brand.active {
+    background-color: #ffe600;
+    border-color: #ffe600; }
+
+.btn--brand-inverse {
+  color: #000;
+  background-color: #ffe600;
+  border-color: #ffe600; }
+  .btn--brand-inverse:hover {
+    color: #fff;
+    background-color: #ccb800;
+    border-color: #ccb800; }
+  .btn--brand-inverse:active, .btn--brand-inverse.active {
+    color: #fff;
+    background-color: #ccb800;
+    border-color: #ccb800; }
+  .btn--brand-inverse.disabled, .btn--brand-inverse.disabled:hover, .btn--brand-inverse.disabled:focus, .btn--brand-inverse.disabled.focus, .btn--brand-inverse.disabled:active, .btn--brand-inverse.disabled.active, .btn--brand-inverse[disabled], .btn--brand-inverse[disabled]:hover, .btn--brand-inverse[disabled]:focus, .btn--brand-inverse[disabled].focus, .btn--brand-inverse[disabled]:active, .btn--brand-inverse[disabled].active,
+  fieldset[disabled] .btn--brand-inverse,
+  fieldset[disabled] .btn--brand-inverse:hover,
+  fieldset[disabled] .btn--brand-inverse:focus,
+  fieldset[disabled] .btn--brand-inverse.focus,
+  fieldset[disabled] .btn--brand-inverse:active,
+  fieldset[disabled] .btn--brand-inverse.active {
     background-color: #ffe600;
     border-color: #ffe600; }
 
@@ -1182,7 +1206,18 @@ input[type="search"] {
   -webkit-appearance: none; }
 
 .form__group {
-  margin-bottom: 15px; }
+  margin-bottom: 25px; }
+  .form__group--inverse .form__control {
+    color: #fff;
+    border-color: #fff; }
+    .form__group--inverse .form__control::-webkit-input-placeholder {
+      color: #fff; }
+    .form__group--inverse .form__control::-moz-placeholder {
+      color: #fff; }
+    .form__group--inverse .form__control:-ms-input-placeholder {
+      color: #fff; }
+    .form__group--inverse .form__control::placeholder {
+      color: #fff; }
 
 .form__control {
   display: block;
@@ -1256,6 +1291,24 @@ textarea.form__control {
 input[type="search"] {
   -webkit-appearance: none; }
 
+.anchor--abs {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.anchor__link {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: #ffe600; }
+
+.anchor__icon {
+  font-size: 18px;
+  color: #fff;
+  line-height: 60px; }
+
 .features--inverse__title, .features--inverse__description {
   color: #fff; }
 
@@ -1302,6 +1355,8 @@ input[type="search"] {
 .features__description {
   font-weight: 300;
   line-height: 25px; }
+  .features__description--fs-md {
+    font-size: 20px; }
 
 .has-active .features__wrapper-icon {
   background: transparent;
@@ -1354,3 +1409,26 @@ input[type="search"] {
     margin: 0; }
     .navbar-nav > li {
       float: left; } }
+
+.footer__copyright {
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 25px; }
+  .footer__copyright--brand {
+    color: #ffe600;
+    margin: 0; }
+
+.social-list--mg-bot {
+  margin-bottom: 25px; }
+
+.social-list__item {
+  display: inline-block;
+  padding-right: 20px; }
+
+.social-list__icon {
+  font-size: 17px;
+  color: #fff;
+  display: inline-block; }
+  .social-list__icon:hover {
+    color: #ffe600; }

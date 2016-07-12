@@ -54,9 +54,13 @@ $btn-border-radius:              0 !default;
 $btn-padding-vertical:           15px !default;
 $btn-padding-horizontal:         45px !default;
 
-$btn-brand-color:                #fff !default;
+$btn-font-size-sm:               15px;
+
+$btn-brand-color:                #fff;
 $btn-brand-bg:                   $brand-color !default;
 $btn-brand-border:               $brand-color !default;
+
+$btn-color-inverse:              #000;
 
 $btn-brand-color-hover:          #fff !default;
 $btn-brand-bg-hover:             darken($brand-color, 10%) !default;
@@ -88,7 +92,7 @@ $input-padding:                  ($input-height-base - $input-line-height-comput
 $input-padding-vertical:         15px !default;
 $input-padding-horizontal:       20px !default;
 
-$form-group-margin-bottom:       15px !default;
+$form-group-margin-bottom:       25px !default;
 $cursor-disabled:                not-allowed !default;
 
 /////////// Icons

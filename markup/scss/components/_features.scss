@@ -54,6 +54,9 @@
 	&__description{
 		font-weight: 300;
 		line-height: 25px;
+		&--fs-md{
+			font-size: 20px;
+		}
 	}
 }
 .has-active{

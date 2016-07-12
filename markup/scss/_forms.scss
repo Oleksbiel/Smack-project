@@ -110,8 +110,18 @@ input[type="search"] {
 }
 
 .form {
+ 
   &__group {
     margin-bottom: $form-group-margin-bottom;
+    &--inverse{
+      .form__control{
+        color: $input-color-inverse;
+        border-color: $input-border-inverse;
+        &::placeholder{
+          color: $input-color-inverse;
+        }
+      }
+    }
   }
   &__control {
     display: block;

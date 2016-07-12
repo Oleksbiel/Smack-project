@@ -1,0 +1,13 @@
+.footer{
+
+	&__copyright{
+		display: inline-block;
+		color: #fff;
+		font-weight: 300;
+		margin-bottom: 25px;
+		&--brand{
+			color: $brand-color;
+			margin: 0;
+		}
+	}
+}

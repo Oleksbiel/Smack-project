@@ -1,0 +1,19 @@
+.anchor {
+	&--abs{
+		position: absolute;
+    	bottom: 0;
+    	left: 50%;
+    	transform: translateX(-50%);
+	}
+	&__link{
+		display: inline-block;
+		width: 60px;
+		height: 60px;
+		background: $brand-color;
+	}
+	&__icon{
+		font-size: 18px;
+		color: #fff;
+		line-height: 60px;
+	}
+}
