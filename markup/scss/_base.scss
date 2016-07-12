@@ -1,14 +1,19 @@
 .section{
-	&--darkest{
-		background-color: $bg-3;
-	}	
-	&--dark{
-		background-color: $bg-2;
+	background-color: $body-bg;
+
+	&--inverse{
+		background-color: $bg-inverse;
 		color: #fff;
-	}
+	}	
 	&--light{
-		background-color: $body-bg;	
+		background-color: $bg-light;	
 	}
+	&--header{
+		background-color: $bg-3;
+	}
+	&--footer{
+		background-color: $bg-footer;		
+	}		
 	&--pd-sm{
 		padding: $section-padding-sm;
 	}
@@ -27,13 +32,55 @@
 	margin: auto;
 	position: absolute;
 	top: 50%; 
-	-webkit-transform: translate(0,-50%);
-    -ms-transform: translate(0,-50%);
-        transform: translate(0,-50%);
+    transform: translate(0,-50%);
 
         h1{
         	width: 65%;
         	margin-left: auto;
         	margin-right: auto;
         }
+}
+.heading{
+	margin-bottom: 60px;
+	color: #515151;		
+	&__small__title{
+		color: #515151;
+		font-weight: 400;
+	}
+	&__title{
+		color: #000;
+
+		&--color-brand{
+			color: $brand-color;
+		}
+	}
+	&__description{
+		line-height: 1.56;
+		font-weight: 300;
+		color: #707070;
+	}
+	&--inverse{
+			color: #fff;		
+		.heading__title , 
+		.heading__description{
+			color: #fff;
+		}
+	}
+}
+
+.border-bottom  {
+	text-align: center;
+	margin: 20px 0 40px;
+	position:relative;
+  &:after {
+		content: '';
+		position: absolute;
+		width: 171px;
+		height: 2px;
+		left: 0;
+		right: 0;
+		bottom: -100;
+		margin: 0 auto;
+		background: $brand-color;
+	}
 }
