@@ -1,5 +1,6 @@
 .navbar {
   position: relative;
+  padding: $section-padding-sm;
   @include clearfix;
 }
 // Brand/project name
@@ -23,15 +24,31 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-nav {
-  //margin: ($navbar-padding-vertical / 2) (-$navbar-padding-horizontal);
-
+  > li {
+    position: relative;
+  }  
+  > li + li:before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: $link-color;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
   > li > a {
-    padding-top:    10px;
-    padding-bottom: 10px;
+    padding:  10px 26px;
     //line-height: $line-height-computed;
+    color: #fff;
     font-weight: 700;
-    font-size: 13px;
+    font-size:   $font-size-h6;
     text-transform: uppercase;
+    text-decoration: none;
+        &:hover,
+        &:focus {
+          color: $link-color;
+        }    
   }
 
   @media (max-width: 720px) {
@@ -57,14 +74,49 @@
   // Uncollapse the nav
   @media (min-width: 720px) {
     float: right;
-    margin: 0;
+    margin: 20px 0;
 
     > li {
       float: left;
       > a {
-        //padding-top:    $navbar-padding-vertical;
-        //padding-bottom: $navbar-padding-vertical;
+        padding-top:    $section-padding-sm;
+        padding-bottom: $section-padding-sm;
       }
     }
   }  
+}
+.portfolio {
+  .portfolio__list{
+      position: relative;
+      padding: $section-padding-sm;
+      font-size: 0;
+        > li {
+          position: relative;
+          display: inline-block;
+        }  
+        > li + li:before {
+          content: '';
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          background-color: $link-color;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+        > li > a {
+          padding:  10px 26px;
+          //line-height: $line-height-computed;
+          color: #515151;
+          font-weight: 400;
+          font-size:   $font-size-h5;
+          text-transform: uppercase;
+          text-decoration: none;
+              &:hover,
+              &:focus {
+                color: $link-color;
+              }    
+        }
+
+  }
 }
