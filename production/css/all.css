@@ -1259,12 +1259,20 @@ input[type="search"] {
 .features--inverse__title, .features--inverse__description {
   color: #fff; }
 
+.features--pd-bot {
+  padding-bottom: 60px; }
+
 .features__wrapper-icon {
   width: 106px;
   height: 106px;
   background: #ffe600;
   display: inline-block;
   border-radius: 50%; }
+  .features__wrapper-icon--mg-right {
+    margin-right: 25px; }
+  .features__wrapper-icon--smaller {
+    width: 70px;
+    height: 70px; }
 
 .features__icon {
   color: #fff;
@@ -1275,11 +1283,21 @@ input[type="search"] {
     color: #ffe600;
     line-height: normal;
     font-size: 45px; }
+  .features__icon--smaller {
+    font-size: 28px;
+    line-height: 70px; }
+
+.features__text-block--overflow {
+  overflow: hidden; }
 
 .features__title {
   color: #131316;
   font-weight: 700;
   text-transform: uppercase; }
+  .features__title--normal {
+    font-weight: 400;
+    color: #515151;
+    margin-top: 0; }
 
 .features__description {
   font-weight: 300;

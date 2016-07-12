@@ -4,12 +4,22 @@
 			color: #fff;
 		}
 	}
+	&--pd-bot{
+		padding-bottom: 60px;
+	}
 	&__wrapper-icon{
 		width: 106px;
 		height: 106px;
 		background: $brand-color;
 		display: inline-block;
 		border-radius: 50%;
+		&--mg-right{
+			margin-right: 25px;
+		}
+		&--smaller{
+			width: 70px;
+			height: 70px;
+		}
 	}
 	&__icon{
 		color: #fff;
@@ -21,14 +31,25 @@
 			line-height: normal;
 			font-size: 45px;
 		}
+		&--smaller{
+			font-size: 28px;
+			line-height: 70px;
+		}
 	}
 	&__text-block{
-
+		&--overflow{
+			overflow: hidden;
+		}
 	}
 	&__title{
 		color: $bg-4;
 		font-weight: 700;
 		text-transform: uppercase;
+		&--normal {
+			font-weight: 400;
+			color: #515151;
+			margin-top: 0;
+		}
 	}
 	&__description{
 		font-weight: 300;
