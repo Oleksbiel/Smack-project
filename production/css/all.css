@@ -1653,6 +1653,21 @@ input[type="search"] {
   text-align: center;
   display: inline-block; }
 
+.counter-box {
+  border: 1px solid #ffe600;
+  background: transparent;
+  padding: 30px 60px; }
+  .counter-box__number {
+    font-weight: 700;
+    font-size: 40px;
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 15px; }
+  .counter-box__description {
+    color: #ffe600;
+    text-transform: uppercase;
+    white-space: nowrap; }
+
 .table {
   display: table;
   width: 100%;

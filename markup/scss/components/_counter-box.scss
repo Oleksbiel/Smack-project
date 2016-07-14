@@ -1,0 +1,17 @@
+.counter-box{
+	border: 1px solid $brand-color;
+	background: transparent;
+	padding: 30px 60px;
+	&__number{
+		font-weight: 700;
+		font-size: 40px;
+		display: inline-block;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+	&__description{
+		color: $brand-color;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+}
