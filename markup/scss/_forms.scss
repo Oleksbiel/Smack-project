@@ -125,6 +125,7 @@ input[type="search"] {
   }
   &__control {
     display: block;
+    font-family: $input-font-family;
     width: 100%;
     height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
     padding: $input-padding-vertical $input-padding-horizontal;

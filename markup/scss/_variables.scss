@@ -90,6 +90,7 @@ $input-font-size:                15px !default;
 $input-line-height:              1.4 !default;
 $input-border-width:             1px !default;
 $input-line-height-computed:     floor($input-font-size * $input-line-height) !default;
+$input-font-family:              Oswald;
 
 $input-padding:                  ($input-height-base - $input-line-height-computed - $input-border-width) / 2 !default;
 $input-padding-vertical:         15px !default;
