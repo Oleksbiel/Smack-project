@@ -10,13 +10,19 @@
 @import 'buttons';
 @import 'forms';
 
+
 ////// Components
 @import "components/anchor-links";
 @import 'components/features';
 @import 'components/navbar';
 @import 'components/footer';
 @import 'components/list';
-@import "components/superbox";
+
+
+/// Interactive Components 
+
+@import "components/sliders";
+@import "components/progress-bar";
 
 .table{
 	display: table;

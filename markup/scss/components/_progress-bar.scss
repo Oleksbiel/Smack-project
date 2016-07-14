@@ -1,0 +1,32 @@
+.skills{
+    .box{
+        width: 25%;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffe600;
+    }
+    .circle {
+        stroke: $brand-color;
+    }
+    .timer {
+        fill: $brand-color;
+        font-size: 25px !important;
+    }
+}
+
+
+.circliful {
+    position: relative;
+    margin: 0 auto;
+}
+
+.circle-text, .circle-info, .circle-text-half, .circle-info-half {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+
+}
+
