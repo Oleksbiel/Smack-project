@@ -4,7 +4,16 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
 var autoprefixer = require('gulp-autoprefixer');
- 
+var concat = require('gulp-concat'),
+	jsConcat1 = './bower_components/owl-carousel/owl-carousel/owl.carousel.min.js',
+ 	jsConcat2 = './bower_components/circliful/js/circliful.min.js',
+ 	jsConcat3 = './bower_components/countUp.js/dist/countUp.min.js',
+ 	jsConcat4 = './bower_components/mg-space/src/jquery.mg-space.js';
+
+
+ //// Tasks
+
+
 gulp.task('sass', function () {
   return gulp.src('./markup/scss/all.scss')
     .pipe(sass().on('error', sass.logError))
@@ -22,3 +31,15 @@ gulp.task('default', () =>
 		.pipe(imagemin())
 		.pipe(gulp.dest('production/images'))
 );
+
+gulp.task('jquery', () =>
+	gulp.src('./bower_components/jquery/dist/jquery.js')
+		.pipe(gulp.dest('markup/js/'))
+);
+
+ 
+gulp.task('scripts', function() {
+  return gulp.src([jsConcat1, jsConcat2, jsConcat3, jsConcat4])
+    .pipe(concat('allInteractive.js'))
+    .pipe(gulp.dest('markup/js/'));
+});

@@ -61,13 +61,13 @@ $(window).resize(function() {
 ////// Counter up 
 
 
-var options = {
-  useEasing : true, 
-  useGrouping : false, 
-  separator : '', 
-  decimal : '.', 
-  prefix : '', 
-  suffix : '' 
+var options = {  
+    useEasing: true,
+      useGrouping: false,
+      separator: '',
+      decimal: '.',
+      prefix: '',
+      suffix: ''
 };
 var demo = new CountUp("counterBox1", 0, 1600, 0, 4, options);
 var demo2 = new CountUp("counterBox2", 0, 3200, 0, 4, options);
@@ -77,3 +77,10 @@ demo.start();
 demo2.start();
 demo3.start();
 demo4.start();
+
+////// mg-space  (google photo)
+
+
+$(function() {
+    $('.mg-space-init').mgSpace();
+});

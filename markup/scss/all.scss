@@ -1,3 +1,4 @@
+/// Variables
 
 @import 'variables';
 
@@ -24,6 +25,11 @@
 @import "components/sliders";
 @import "components/progress-bar";
 @import "components/counter-box";
+
+@import "../../bower_components/owl-carousel/owl-carousel/owl.carousel";
+@import "../../bower_components/owl-carousel/owl-carousel/owl.theme";
+@import "../../bower_components/owl-carousel/owl-carousel/owl.transitions";
+@import "../../bower_components/mg-space/src/mg-space";
 
 .table{
 	display: table;
