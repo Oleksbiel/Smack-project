@@ -8,7 +8,9 @@ var concat = require('gulp-concat'),
 	jsConcat1 = './bower_components/owl-carousel/owl-carousel/owl.carousel.min.js',
  	jsConcat2 = './bower_components/circliful/js/circliful.min.js',
  	jsConcat3 = './bower_components/countUp.js/dist/countUp.min.js',
- 	jsConcat4 = './bower_components/mg-space/src/jquery.mg-space.js';
+ 	jsConcat4 = './bower_components/mg-space/src/jquery.mg-space.js',
+ 	jsConcat5 = './markup/js/anchor-top.js',
+ 	jsConcat6 = './markup/js/anchor-bottom.js';
 
 
  //// Tasks
@@ -39,7 +41,7 @@ gulp.task('jquery', () =>
 
  
 gulp.task('scripts', function() {
-  return gulp.src([jsConcat1, jsConcat2, jsConcat3, jsConcat4])
+  return gulp.src([jsConcat1, jsConcat2, jsConcat3, jsConcat4, jsConcat5 , jsConcat6])
     .pipe(concat('allInteractive.js'))
     .pipe(gulp.dest('markup/js/'));
 });
