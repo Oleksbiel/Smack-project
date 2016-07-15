@@ -29,7 +29,11 @@ img {
 	height: auto;
 	vertical-align: middle;
 }
-
+p {
+	line-height: 1.56;
+    font-weight: 300;
+    color: inherit;
+}
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $headings-font-family;

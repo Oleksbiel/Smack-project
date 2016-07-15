@@ -36,3 +36,31 @@
 	width: 100%;
   	height: 100vh;	
 }
+.mg-trigger{
+    text-align: center;
+    background: #fff;
+    border-bottom: 2px solid #e1e6e6;   
+}
+figure{
+    margin: 0;
+    padding: 0;
+    
+    figcaption{
+        padding: 20px 0;
+		color: $brand-color;
+        .figcaption_header{
+        	color: $brand-color;
+        }
+        .figcaption_description{
+        	color: #707070;
+        }        
+    }
+}
+.mg-target {
+  	padding: 15px 15px 30px;
+  	background: #131316;
+  	color: #fff;
+  	h4{
+  		color: $brand-color;	
+  	}
+}
